@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SqliteDemo</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="email">Email</string>
+    <string name="btnSubmit">Submit</string>
+</resources>
