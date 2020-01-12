@@ -46,35 +46,29 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Data is not inserted", Toast.LENGTH_SHORT).show();
                 }
                 Intent intent = new Intent(MainActivity.this, DisplayActivity.class);
-                intent.putExtra("name", name);
-                intent.putExtra("number", number);
-                intent.putExtra("email", email);
                 startActivity(intent);
             }
         });
         btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Cursor data = dbHelper.showData();
-                List<String> list = new ArrayList<>();
-                String datas;
-                StringBuilder b = new StringBuilder();
-                while(data.moveToNext()){
-                    b.append(data.getString(0) + " " + data.getString(1) + " " + data.getString(2) + "\n");
-                    datas = data.getString(0) + " " + data.getString(1) + " " + data.getString(2) + "\n";
-                    Log.d("data", datas);
-                    //list.add(datas);
-                }
-
-
-                showDialog(b.toString());
+                Intent intent = new Intent(getApplicationContext(), DisplayActivity.class);
+                startActivity(intent);
+//                Cursor data = dbHelper.showData();
+//                List<String> list = new ArrayList<>();
+//                String datas;
+//                StringBuilder b = new StringBuilder();
+//                while(data.moveToNext()){
+//                    b.append(data.getString(0) + " " + data.getString(1) + " " + data.getString(2) + "\n");
+//                    datas = data.getString(0) + " " + data.getString(1) + " " + data.getString(2) + "\n";
+//                    Log.d("data", datas);
+//                    //list.add(datas);
+//                }
+//
+//
+//                showDialog(b.toString());
             }
         });
     }
-    public void showDialog(String d){
-        new AlertDialog.Builder(this).setTitle("Result")
-                .setMessage(""+d)
-                .setCancelable(true)
-                .show();
-    }
+
 }
