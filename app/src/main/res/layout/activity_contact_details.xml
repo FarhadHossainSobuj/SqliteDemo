@@ -36,9 +36,9 @@
             android:layout_marginStart="303dp"
             android:layout_marginTop="92dp"
             android:layout_marginEnd="20dp"
-            android:background="#F2F7F7"
+            android:background="#00796B"
             android:text="Edit"
-            android:textColor="#06665B"
+            android:textColor="#fff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +83,6 @@
             android:text=" Sabbir Ahmed"
             android:textColor="#F7F4F8"
             android:textSize="24sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -101,7 +100,6 @@
             android:text=" 0175554545...."
             android:textColor="#F7F4F8"
             android:textSize="24sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +118,6 @@
             android:text=" sabbir@gmail.com"
             android:textColor="#F7F4F8"
             android:textSize="24sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -130,22 +127,26 @@
             android:id="@+id/imgMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="304dp"
+            android:background="#00796B"
+            android:padding="6dp"
+            android:src="@drawable/message"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.773"
+            app:layout_constraintHorizontal_bias="0.612"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/message" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imgCall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="304dp"
+            android:background="#00796B"
+            android:padding="6dp"
+            android:src="@drawable/call"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintHorizontal_bias="0.381"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/call"/>
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

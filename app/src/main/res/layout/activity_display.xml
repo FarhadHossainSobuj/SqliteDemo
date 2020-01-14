@@ -7,16 +7,18 @@
     android:orientation="vertical"
     tools:context=".DisplayActivity">
 
-    <TextView
-        android:id="@+id/tvDisplay"
+    <EditText
+        android:id="@+id/edtSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="18dp"
-        android:background="#00897B"
+        android:layout_marginEnd="10dp"
+        android:background="#D2E2E2"
         android:gravity="center"
+        android:hint="Search"
         android:padding="10dp"
-        android:text="Display Contacts"
-        android:textColor="#fff"
+        android:textColor="#070114"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,16 +27,14 @@
     <ListView
         android:id="@+id/listView"
         android:layout_width="372dp"
-        android:layout_height="660dp"
+        android:layout_height="600dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="652dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDisplay"
-        app:layout_constraintVertical_bias="0.033" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSearch" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
